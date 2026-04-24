@@ -1,0 +1,145 @@
+.form_container {
+    position: relative;
+    width: calc(100% - 20px);
+    height: 80%;
+    padding: 10px 10px 0 30px;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    font-size: 20px;
+    
+}
+.projet_deadline_container,
+.name_status_container,
+.description_invoicing_container,
+.owner_deadline_container  {
+    display: flex;
+    color: black;
+    margin-left: 30px;
+}
+.owner_name,
+.status_type,
+.project_name,
+.ticket_name,
+.invoicing,
+.comment,
+.description,
+.deadline {
+    font-size: 25px;
+    /* padding-bottom: 5px; */
+}
+.invoicing_txt,
+.ticket_name_txt,
+.status_txt_edit,
+.deadline_txt,
+.project_name_txt {
+    margin-bottom: 20px;
+    color: #888888;
+}
+
+.description_container,
+.ticket_name_container,
+.project_name_container,
+.owner_container {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.description_container_project {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-left: 30px;
+}
+.description_container {
+    width: 40%;
+}
+
+.owner_name_txt {
+    width: 400px;
+    margin-bottom: 20px;
+    color: #888888;
+}
+
+.deadline_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    transform: translate(-50%);
+    
+    color: black;
+}
+.status_container,
+.invoicing_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    transform: translate(-50%);
+    
+    color: black;
+}
+
+.status_txt {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    height: 30px;
+    color: white;
+}
+
+.description_txt {
+    max-width: calc(100% - 10px);
+    min-width: calc(100% - 10px);
+    max-height: 105px;
+    margin-bottom: 20px;
+    color: #888888;
+}
+
+.comment_container {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin-left: 30px;
+    color: black;
+}
+
+.comment_txt {
+    flex-grow: 1;
+    max-width: calc(100% - 10px);
+    min-width: calc(100% - 10px);
+    color: #888888;
+}
+
+.info_bar {
+    position: fixed;
+    display: flex;
+    gap: 10px;
+    bottom: 0;
+    right: 0;
+    margin: 0 20px 40px 0;
+}
+
+.new,
+.edit,
+.del,
+.favorite {
+    width: 50px;
+    height: 50px; 
+    color: white;
+    background-color: #e74229;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+} 
+
+.new:hover,
+.edit:hover,
+.del:hover,
+.favorite:hover {
+    background-color: #da4831;
+}

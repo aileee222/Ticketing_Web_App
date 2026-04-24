@@ -1,0 +1,58 @@
+2026-03-11 13:32:06,517 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2026-03-11 13:32:06,520 INFO supervisord started with pid 1
+2026-03-11 13:32:07,522 INFO spawned: 'apache' with pid 8
+2026-03-11 13:32:07,524 INFO spawned: 'laravel-worker-batch-1_00' with pid 9
+2026-03-11 13:32:07,525 INFO spawned: 'laravel-worker-batch-1_01' with pid 10
+2026-03-11 13:32:07,527 INFO spawned: 'laravel-worker-batch-1_02' with pid 11
+2026-03-11 13:32:07,528 INFO spawned: 'laravel-worker-batch-2_00' with pid 12
+2026-03-11 13:32:07,530 INFO spawned: 'laravel-worker-batch-2_01' with pid 14
+2026-03-11 13:32:07,531 INFO spawned: 'laravel-worker-batch-2_02' with pid 16
+2026-03-11 13:32:07,556 WARN exited: laravel-worker-batch-1_01 (exit status 1; not expected)
+2026-03-11 13:32:07,557 WARN exited: laravel-worker-batch-1_02 (exit status 1; not expected)
+2026-03-11 13:32:07,559 WARN exited: laravel-worker-batch-2_00 (exit status 1; not expected)
+2026-03-11 13:32:07,560 WARN exited: laravel-worker-batch-2_01 (exit status 1; not expected)
+2026-03-11 13:32:07,561 WARN exited: laravel-worker-batch-2_02 (exit status 1; not expected)
+2026-03-11 13:32:07,562 WARN exited: laravel-worker-batch-1_00 (exit status 1; not expected)
+2026-03-11 13:32:08,635 INFO success: apache entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-11 13:32:08,636 INFO spawned: 'laravel-worker-batch-1_00' with pid 30
+2026-03-11 13:32:08,638 INFO spawned: 'laravel-worker-batch-1_01' with pid 31
+2026-03-11 13:32:08,639 INFO spawned: 'laravel-worker-batch-1_02' with pid 32
+2026-03-11 13:32:08,641 INFO spawned: 'laravel-worker-batch-2_00' with pid 33
+2026-03-11 13:32:08,642 INFO spawned: 'laravel-worker-batch-2_01' with pid 34
+2026-03-11 13:32:08,643 INFO spawned: 'laravel-worker-batch-2_02' with pid 35
+2026-03-11 13:32:08,667 WARN exited: laravel-worker-batch-1_00 (exit status 1; not expected)
+2026-03-11 13:32:08,667 WARN exited: laravel-worker-batch-1_02 (exit status 1; not expected)
+2026-03-11 13:32:08,668 WARN exited: laravel-worker-batch-1_01 (exit status 1; not expected)
+2026-03-11 13:32:08,668 WARN exited: laravel-worker-batch-2_00 (exit status 1; not expected)
+2026-03-11 13:32:08,671 WARN exited: laravel-worker-batch-2_01 (exit status 1; not expected)
+2026-03-11 13:32:08,677 WARN exited: laravel-worker-batch-2_02 (exit status 1; not expected)
+2026-03-11 13:32:10,682 INFO spawned: 'laravel-worker-batch-1_00' with pid 36
+2026-03-11 13:32:10,684 INFO spawned: 'laravel-worker-batch-1_01' with pid 37
+2026-03-11 13:32:10,686 INFO spawned: 'laravel-worker-batch-1_02' with pid 38
+2026-03-11 13:32:10,688 INFO spawned: 'laravel-worker-batch-2_00' with pid 39
+2026-03-11 13:32:10,689 INFO spawned: 'laravel-worker-batch-2_01' with pid 40
+2026-03-11 13:32:10,690 INFO spawned: 'laravel-worker-batch-2_02' with pid 41
+2026-03-11 13:32:10,714 WARN exited: laravel-worker-batch-1_00 (exit status 1; not expected)
+2026-03-11 13:32:10,714 WARN exited: laravel-worker-batch-1_01 (exit status 1; not expected)
+2026-03-11 13:32:10,714 WARN exited: laravel-worker-batch-1_02 (exit status 1; not expected)
+2026-03-11 13:32:10,717 WARN exited: laravel-worker-batch-2_01 (exit status 1; not expected)
+2026-03-11 13:32:10,723 WARN exited: laravel-worker-batch-2_00 (exit status 1; not expected)
+2026-03-11 13:32:10,726 WARN exited: laravel-worker-batch-2_02 (exit status 1; not expected)
+2026-03-11 13:32:13,729 INFO spawned: 'laravel-worker-batch-1_00' with pid 42
+2026-03-11 13:32:13,731 INFO spawned: 'laravel-worker-batch-1_01' with pid 43
+2026-03-11 13:32:13,733 INFO spawned: 'laravel-worker-batch-1_02' with pid 44
+2026-03-11 13:32:13,734 INFO spawned: 'laravel-worker-batch-2_00' with pid 45
+2026-03-11 13:32:13,735 INFO spawned: 'laravel-worker-batch-2_01' with pid 46
+2026-03-11 13:32:13,737 INFO spawned: 'laravel-worker-batch-2_02' with pid 47
+2026-03-11 13:32:13,758 WARN exited: laravel-worker-batch-1_00 (exit status 1; not expected)
+2026-03-11 13:32:13,759 INFO gave up: laravel-worker-batch-1_00 entered FATAL state, too many start retries too quickly
+2026-03-11 13:32:13,762 WARN exited: laravel-worker-batch-1_02 (exit status 1; not expected)
+2026-03-11 13:32:13,763 INFO gave up: laravel-worker-batch-1_02 entered FATAL state, too many start retries too quickly
+2026-03-11 13:32:13,763 WARN exited: laravel-worker-batch-1_01 (exit status 1; not expected)
+2026-03-11 13:32:13,763 INFO gave up: laravel-worker-batch-1_01 entered FATAL state, too many start retries too quickly
+2026-03-11 13:32:13,766 WARN exited: laravel-worker-batch-2_00 (exit status 1; not expected)
+2026-03-11 13:32:13,767 INFO gave up: laravel-worker-batch-2_00 entered FATAL state, too many start retries too quickly
+2026-03-11 13:32:13,767 WARN exited: laravel-worker-batch-2_02 (exit status 1; not expected)
+2026-03-11 13:32:13,768 INFO gave up: laravel-worker-batch-2_02 entered FATAL state, too many start retries too quickly
+2026-03-11 13:32:13,768 WARN exited: laravel-worker-batch-2_01 (exit status 1; not expected)
+2026-03-11 13:32:14,770 INFO gave up: laravel-worker-batch-2_01 entered FATAL state, too many start retries too quickly

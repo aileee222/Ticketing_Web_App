@@ -1,0 +1,79 @@
+services:
+  dns:
+    container_name: dnsmasq
+    restart: always
+    image: strm/dnsmasq
+    volumes:
+      - ./config/dnsmasq/dnsmasq.conf:/etc/dnsmasq.conf
+    ports:
+      - "53:53/udp"
+    cap_add:
+      - NET_ADMIN
+    networks:
+      laravel_network:
+        ipv4_address: 172.30.0.5
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "laravel-12"
+    container_name: laravel
+    restart: unless-stopped
+    ports:
+      - 9000:80
+    environment:
+      APP_ENV_FILE: "local"
+    volumes:
+      - ./src:/var/www/html
+      - ./config/apache/default.conf:/etc/apache2/sites-enabled/000-default.conf
+      - ./config/apache/ports.conf:/etc/apache2/ports.conf
+    networks:
+        laravel_network:
+          ipv4_address: 172.30.0.2
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    links:
+      - db
+    volumes:
+      - ./config/pma/config.inc.php:/etc/phpmyadmin/config.inc.php
+    environment:
+      PMA_HOST: mysql
+    networks:
+      laravel_network:
+        ipv4_address: 172.30.0.6
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    restart: always
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - ./data/redis:/data
+    networks:
+        laravel_network:
+          ipv4_address: 172.30.0.4  
+
+  db:
+    image: mysql
+    restart: unless-stopped
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: lrvdb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    volumes:
+      - ./data/laravel:/var/lib/mysql
+    networks:
+        laravel_network:
+          ipv4_address: 172.30.0.3
+
+networks:
+  laravel_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16

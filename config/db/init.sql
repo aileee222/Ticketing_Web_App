@@ -1,0 +1,6 @@
+-- DROP DATABASE IF EXISTS lrvdb;
+-- CREATE DATABASE lrvdb;
+
+-- CREATE USER 'user'@'%' IDENTIFIED BY 'password';
+-- GRANT ALL PRIVILEGES ON lrvdb.* TO 'user'@'%';
+-- FLUSH PRIVILEGES;
